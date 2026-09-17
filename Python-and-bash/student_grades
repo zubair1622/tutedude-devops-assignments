@@ -1,0 +1,23 @@
+students = {
+    "Zubair": "A",
+    "Ahmad": "B",
+    "Sara": "C"
+}
+
+print("Current student grades:")
+for name, grade in students.items():
+    print(name, ":", grade)
+
+name = input("\nEnter student name: ")
+grade = input("Enter grade: ")
+
+if name in students:
+    students[name] = grade
+    print("Grade updated successfully.")
+else:
+    students[name] = grade
+    print("New student added successfully.")
+
+print("\nUpdated student grades:")
+for name, grade in students.items():
+    print(name, ":", grade)
