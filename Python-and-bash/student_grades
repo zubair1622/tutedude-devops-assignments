@@ -1,23 +1,24 @@
+# This program allows the user to input student names and their corresponding grades. It maintains a dictionary of students and their grades, allowing for updates to existing students or the addition of new students.
 students = {
     "Zubair": "A",
     "Ahmad": "B",
     "Sara": "C"
 }
-
+# Display current student grades
 print("Current student grades:")
 for name, grade in students.items():
     print(name, ":", grade)
-
+# Prompt user for input
 name = input("\nEnter student name: ")
 grade = input("Enter grade: ")
-
+# Update or add student grade
 if name in students:
     students[name] = grade
     print("Grade updated successfully.")
 else:
     students[name] = grade
     print("New student added successfully.")
-
+# Display updated student grades
 print("\nUpdated student grades:")
 for name, grade in students.items():
     print(name, ":", grade)
